@@ -21,27 +21,27 @@ const Our_Team = () => {
       </p>
 
       <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={vipin} alt="Criminal Cases" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={vipinHover} alt="Criminal Cases Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
-        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={aarav} alt="Bail Matters" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={aaravHover} alt="Bail Matters Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
-        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={advik} alt="NDPS Cases" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={advikHover} alt="NDPS Cases Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
-        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={arjun} alt="POCSO Cases" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={arjunHover} alt="POCSO Cases Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
-        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={acharya} alt="Civil Cases" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={acharyaHover} alt="Civil Cases Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>
-        <div className="relative w-full pb-20 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
+        <div className="relative w-full pb-20 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded-lg transform transition-transform duration-300 hover:scale-105 group hover:z-50">
           <img src={aadesh} alt="Sexual Assault" className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0" />
           <img src={aadeshHover} alt="Sexual Assault Hover" className="w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>

@@ -163,7 +163,7 @@ const HomeMain = () => {
             <div className='absolute inset-0 flex flex-col items-center justify-center text-center text-white p-'>
                 <img src={logo2} alt="Logo" className='mb-4 sm:mt-24 md:mb- max-w-xs md:max-w-full' /> 
                 <h1 className='text-lg md:text-5xl font-bold'>EMPOWERING YOU THROUGH EVERY</h1>
-                <h2 className='text-lg md:text-7xl font-semibold mt-4 mb-4 md:mt-8'>LEGAL CHALLENGE</h2>
+                <h2 className='text-lg md:text-7xl text-yellow-300 font-semibold mt-4 mb-4 md:mt-8'>LEGAL CHALLENGE</h2>
                 <p className='max-w-2xl text-xs md:text-lg mb-12 md:mb-40 mt-4'>
                     Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.
                 </p>

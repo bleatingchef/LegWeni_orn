@@ -49,7 +49,7 @@ import group from "../assets/group.png";
 
 const Practice = () => {
   return (
-    <div className="text-center pt-16 sm:pt-32">
+    <div className="text-center pt-10 sm:pt-10">
       <h2 className="text-4xl sm:text-7xl mb-10 text-slate-950">Our Practice Areas</h2>
       <div className="flex flex-wrap justify-center gap-8">
         <div className="w-4/5 sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/8 bg-gray-100 shadow-md rounded-lg overflow-hidden">
