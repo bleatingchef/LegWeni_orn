@@ -180,7 +180,7 @@ const HomeMain = () => {
             <div className='absolute sm:bottom-[-180px] sm:top-[350px] top-[400px] inset-x-0 sm:mt-20 mt-40 bottom-0 z-1'>
                 <div className='container mx-auto px-2 sm:py-0 py-10'>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-16 md:mt-64'>
-                        <div className='bg-slate-950 text-white p-4 md:p-12 rounded-lg text-center'>
+                        <div className='bg-slate-950 text-white p-2 md:p-12 rounded-lg text-center'>
                             <div className='mb-4'>
                                 <img src={featureImg1} alt="Feature" className='w-12 h-12 md:w-24 md:h-24 mx-auto' /> 
                             </div>
