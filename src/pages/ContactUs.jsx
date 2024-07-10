@@ -10,7 +10,7 @@ const ContactUs = () => {
         <Navbar/>
         <Contactbg/>
         <Book_appointment/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

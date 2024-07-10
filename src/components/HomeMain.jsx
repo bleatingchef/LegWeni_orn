@@ -111,7 +111,7 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import homeimg from "../assets/homebgimg.png";
 import logo2 from "../assets/logo2.png"; 
 import featureImg1 from "../assets/featureimg1.png"; 
@@ -123,13 +123,10 @@ const HomeMain = () => {
 
     return (
         <div className='relative'>
-            {/* Background Image */}
             <img src={homeimg} alt="" className='w-full object-cover h-screen' />
             
-            {/* Overlay */}
-            <div className='absolute inset-0 bg-black opacity-20'></div>
+            {/* <div className='absolute inset-0 bg-black opacity-20'></div> */}
             
-            {/* Menu Button */}
             <div className='absolute top-4 right-4 z-10'>
                 <button onClick={() => setMenuOpen(true)} className='p-2 rounded-full bg-white text-black hover:bg-gray-500 transition duration-300'>
                     <svg className='w-10 h-8' fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +135,6 @@ const HomeMain = () => {
                 </button>
             </div>
             
-            {/* Mobile Menu */}
             <div className={`fixed inset-0 bg-slate-950 text-white transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-500 ease-in-out z-20`}>
                 <div className='flex justify-end p-4'>
                     <button onClick={() => setMenuOpen(false)} className='p-2 rounded-full bg-black text-white hover:bg-gray-800 transition duration-300'>
@@ -148,18 +144,18 @@ const HomeMain = () => {
                     </button>
                 </div>
                 <div className='flex flex-col items-center justify-center h-full pr-4 pb-64 md:pb-20 pt-'>
-                    <Link to="/" className='text-5xl md:text-7xl font-semibold mb-4'>Home</Link>
+               
+                    <NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-500 text-6xl" : "text-white hover:text-yellow-200 text-6xl"}>Home</NavLink>
                     <hr className='w-16 md:w-32 mb-4 md:mb-8 bg-slate-950' />
-                    <Link to="/practice" className='text-5xl md:text-7xl font-semibold mb-4'>Practice Areas</Link>
+                    <NavLink to="/practice" className={({ isActive }) => isActive ? "text-yellow-500 text-6xl" : "text-white hover:text-yellow-200 text-6xl"}>Practice Areas</NavLink>
                     <hr className='w-16 md:w-32 mb-4 md:mb-8' />
-                    <Link to="/aboutus" className='text-5xl md:text-7xl font-semibold mb-4'>About Us</Link>
+                    <NavLink to="/aboutus" className={({ isActive }) => isActive ? "text-yellow-500 text-6xl" : "text-white hover:text-yellow-200 text-6xl"}>About Us</NavLink>
                     <hr className='w-16 md:w-32 mb-4 md:mb-8' />
-                    <Link to="/contactus" className='text-5xl md:text-7xl font-semibold mb-4'>Contact Us</Link>
+                    <NavLink to="/contactus" className={({ isActive }) => isActive ? "text-yellow-500 text-6xl" : "text-white hover:text-yellow-200 text-6xl"}>Contact Us</NavLink>
                     <hr className='w-16 md:w-32 mb-4 md:mb-8' />
                 </div>
             </div>
             
-            {/* Content */}
             <div className='absolute inset-0 flex flex-col items-center justify-center text-center text-white p-'>
                 <img src={logo2} alt="Logo" className='mb-4 sm:mt-24 md:mb- max-w-xs md:max-w-full' /> 
                 <h1 className='text-lg md:text-5xl font-bold'>EMPOWERING YOU THROUGH EVERY</h1>
@@ -176,7 +172,6 @@ const HomeMain = () => {
                 </div>
             </div>
             
-            {/* Features */}
             <div className='absolute sm:bottom-[-180px] sm:top-[350px] top-[400px] inset-x-0 sm:mt-20 mt-40 bottom-0 z-1'>
                 <div className='container mx-auto px-2 sm:py-0 py-10'>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-16 md:mt-64'>

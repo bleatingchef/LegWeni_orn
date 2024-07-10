@@ -12,7 +12,7 @@ const AboutUs = () => {
         <AboutUsBg/>
         <Our_Team/>
         <Book_appointment/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

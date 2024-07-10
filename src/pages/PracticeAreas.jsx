@@ -10,7 +10,7 @@ const PracticeAreas = () => {
         <Navbar/>
         <Practice_New/>
         <Book_appointment/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

@@ -15,7 +15,7 @@ function Home() {
       <Practice/>
       <Our_Team/>
       <Book_appointment/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
