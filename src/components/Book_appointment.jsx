@@ -1,28 +1,56 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
+
 
 const Book_appointment = () => {
+  const [form,setForm] = useState({
+    name:"",
+    phone:"",
+    email:"",
+    comment:""
+  })
+
+
+  const handler = (e)=>{
+    const {name , value} = e.target;
+    setForm({
+      ...form,
+      [name]:value
+    });
+  }
+
+  const submitData = async ()=>{
+    try {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/appoint/user`,form,{withCredentials:true})
+      console.log("the data has been sended");
+      
+    } catch (error) {
+      console.error("data is not sended");
+      
+    }
+  }
   return (
     <div className="flex flex-wrap justify-center items-center min-h-screen  px-4 sm:px-6 lg:px-20">
       <div className="w-full md:w-1/2 lg:w-1/3 p-6 sm:p-10 bg-slate-950 text-white rounded-3xl shadow-lg">
         <form className="space-y-6 sm:space-y-10">
           <div>
             <label className="block text-sm font-medium mb-2" htmlFor="name"></label>
-            <input type="text" id="name" name="name" className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Name"/>
+            <input type="text" id="name" name="name" value={form.name} onChange={handler} className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Name"/>
           </div>
           <div>
             <label className="block text-sm font-medium mb-2" htmlFor="phone"></label>
-            <input type="text" id="phone" name="phone" className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Ph. Number"/>
+            <input type="text" id="phone" name="phone" value={form.phone} onChange={handler} className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Ph. Number"/>
           </div>
           <div>
             <label className="block text-sm font-medium mb-2" htmlFor="email"></label>
-            <input type="email" id="email" name="email" className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Mail"/>
+            <input type="email" id="email" name="email" value={form.email} onChange={handler} className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" placeholder="Mail"/>
           </div>
           <div>
             <label className="block text-sm font-medium mb-2" htmlFor="message"></label>
-            <textarea id="message" name="message" className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" rows="4" placeholder="Your Message Here..."></textarea>
+            <textarea id="message" name="comment" value={form.comment} onChange={handler} className="w-full px-4 py-2 sm:px-6 sm:py-3 border border-white-700 rounded-3xl bg-slate-950 text-white focus:ring focus:ring-white-500" rows="4" placeholder="Your Message Here..."></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="px-6 py-3 sm:px-10 bg-white text-blue-900 rounded-md hover:bg-gray-200 transition duration-300">Submit</button>
+            <button type="submit" className="px-6 py-3 sm:px-10 bg-white text-blue-900 rounded-md hover:bg-gray-200 transition duration-300" onClick={submitData}>Submit</button>
           </div>
         </form>
       </div>
